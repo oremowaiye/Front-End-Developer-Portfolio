@@ -1,0 +1,513 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee&family=Jersey+25&family=Micro+5+Charted&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  height: 60px;
+  padding: 0 40px;
+  /* max-width: 960px; */
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: black;
+  font-family: "Jersey 25";
+ 
+  /* cursor: pointer; */
+}
+header a span{
+  background-color: blueviolet;
+}
+header a:hover {
+ background-color: blueviolet;
+
+ 
+   
+}
+
+.logo{
+  color: white;
+  font-family: "Jersey 25";
+}
+
+nav {
+  width: 100%;
+}
+
+nav ul{
+  display: flex;
+  justify-content: space-between;
+}
+
+nav ul li{
+  list-style: none;
+  padding: 0 30px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.5rem;
+}
+
+nav ul li a:hover {
+  text-decoration: dotted;
+}
+
+.links{
+  position: fixed;
+  top: 70px;
+  right: 10px;
+}
+
+.links ul{
+  list-style: none;
+}
+
+.links a{
+  color: white;
+  font-size: 2rem;
+  margin: 20px;
+}
+
+.center{
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 60px 40px;
+  position: relative;
+  height: 86vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* overflow: hidden; */
+}
+
+.landing{
+  display: flex;
+  flex-direction: column;
+  color: white;
+}
+
+.bg{
+  position: absolute;
+  z-index: -1;
+  height: 100vh;
+  object-fit: cover;
+  object-position: 50% 50%;
+}
+
+.bg img{
+  width: 100vw;
+  height: 100vh;
+}
+
+.summary{
+  display: flex;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.orepic{
+  height: 200px;
+  width: 200px;
+  object-fit: cover;
+  margin-right: 50px;
+}
+
+.orepic img{
+  height: 200px;
+  width: 200px;
+  object-fit: cover;
+  object-position: 50% 50%;
+}
+
+.sumtext h1{
+  font-size: 3.5rem;
+  margin-bottom: 20px;
+  font-family: "Jersey 25", sans-serif;
+}
+
+.sumtext p{
+  /* margin: 20px 0; */
+  font-size: 2rem;
+  font-family: sans-serif;
+}
+
+.sumtext a{
+  text-decoration: none;
+  color: rgb(255, 210, 62);
+}
+
+.cta{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cta a button{
+  padding: 10px 40px;
+  margin: 0 20px;
+  /* background-color: rgb(8, 197, 255); */
+  border: none;
+  color: white;
+  font-family: "Jersey 25";
+  font-size: 2rem;
+}
+
+.cta a button:hover{
+  cursor: pointer;
+}
+
+/* contact*/
+.contact-info{
+  margin: 0;
+  padding: 0;
+  font-family: "jersey 25";
+  font-size: larger;
+  background-color: black;
+  color: beige;
+  display: flex;
+  width: 100%;
+  max-width: 1200px;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 0 20px;
+}
+
+.card1{
+  background-color:tomato;
+}
+
+.card2{
+  background-color:violet;
+}
+
+.card3{
+  background-color:turquoise;
+}
+
+.card1,.card2,.card3{
+  padding: 0 20px;
+  margin: 0 10px;
+  width: calc(33% - 20px);
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: rgb(234, 239, 239);
+}
+
+.fa-solid{
+  font-size: 28px;
+  width: 60px;
+  height: 60px;
+  text-align: center;
+  line-height: 60px;
+  transition: 0.3s linear;
+  color: blue;
+}
+
+.card1 p,.card2 p, .card3 p{
+  margin-top: 20px;
+  font-weight: 300;
+  letter-spacing: 2px;
+  max-height: 0;
+  opacity: 0;
+  transform: 0.3s linear;
+}
+
+.card1:hover p,.card2:hover p,.card3:hover p{
+  max-height: 40px;
+  opacity: 1;
+}
+
+@media screen and (max-width:800px){
+  .contact-info{
+    flex-direction:column;
+  }
+
+  .card1,.card2,.card3{
+   width: 100%;
+   max-width: 300px;
+   margin: 10px 0;
+  }
+}
+
+/* about */
+.aboutme{
+  background-color: black;
+  color: white;
+}
+.aboutpage{
+  max-width: 1200px;
+  margin-inline: auto;
+}
+.about{
+  margin: 0;
+  padding: 10px 0;
+  align-items: center;
+  margin-top: 30px;
+  font-family:'Times New Roman', Times, serif;
+  font-size: 40px;
+  max-width: 1200px;
+  margin-inline: auto;
+  font-style: italic;
+}
+
+.about > p{
+  font-size: 20px;
+}
+
+.about div{
+  display: flex;
+  background-color: rgb(28, 64, 180);
+}
+
+
+.aboutsum {
+  display: flex;
+  align-items:end;
+  margin-bottom: 40px;
+ 
+}
+
+.aboutsum p{
+  padding: 10px;
+  width: 200px;
+  height: 200px;
+  position: Absolute; 
+  top: 100px; 
+  right: 100px;
+ 
+ 
+ 
+}
+.sumtext p{
+  font-family: "jersey 25";
+  font-style: italic;
+  
+}
+.skills h2{
+  padding: 10px;
+  font-size: 3.1rem;
+  font-style: italic;
+}
+
+.skillicons{
+  position: relative;
+  display: flex;
+  margin: 10px 0;
+  padding: 20px 0;
+  max-width: 1200px;
+  margin-inline: auto;
+  
+}
+
+.skillicons .icon img{
+  height: 160px;
+  width: auto;
+  max-width: 1400px;
+  margin-inline: auto;
+  display: flex;
+
+}
+
+.btn--download{
+  padding: 20px;
+  text-decoration: none;
+  background: blueviolet;
+  color: white;
+  font-size: 1 rem;
+
+}
+
+/* projects  */
+.projects{
+  background-color: #060606;
+}
+.p1, .p2,.p3{
+  padding: 20px;
+  margin: 10px;
+  float: left;
+  width: 28.48%;
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content:end;
+  align-items: center;
+  box-sizing: border-box;
+  font-family: "jersey 25";
+} 
+
+.p1{
+  background-color:teal;
+ 
+}
+.p2{
+  background-color: rgb(130, 93, 145);
+}
+.p3{
+  background-color: aqua;
+}
+.p4{
+  background-color: darksalmon;
+}
+.p5{
+  background-color: deeppink;
+}
+.p6{
+  background-color: yellowgreen;
+}
+
+ .p4, .p5 , .p6{
+  padding:  20px;
+  margin: 10px ;
+  float: left;
+  width: 28.48%;
+  height: 250px;
+  display: flex;
+  flex-direction:column;
+  justify-content:end;
+  align-items: center;
+  box-sizing: border-box; 
+  font-family: "jersey 25";
+  
+
+} 
+.css, .html,.python,.java{
+  padding: 20px;
+  margin: 10px ;
+  float:left;
+  width: 20%;
+  height: 250px;
+  display: flex;
+  justify-content:center;
+  align-items: center;
+  box-sizing: border-box; 
+  font-family: "jersey 25";
+  background-color: aqua;
+
+}
+
+
+/* project 1 */
+.ps{
+  background-color: #060606;
+}
+.projectsection{
+  padding: 40px 0;
+  max-width: 1200px;
+  margin-inline: auto;
+
+
+}
+
+.projectitem {
+  margin: 0;
+  padding: 0;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  border: 5px solid #555;
+  font-family: "jersey 25";
+  color: white;
+  
+}
+
+.projectitem img{
+  width: 100%;
+}
+
+.projectdesc{
+  width: 65%;
+  margin: 20px auto;
+  font-family: "jersey 25";
+  color: white;
+}
+
+.projectlink{
+  width: 20%;
+  display: block;
+  margin: 20px auto;
+  padding: 20px;
+  background: blueviolet;
+  color: white;
+  text-decoration: none;
+  text-align: center;
+  font-family: 'jersey 25';
+}
+
+.analysis{
+  margin: 100px;
+  padding: 0;
+ 
+  display: flex;
+  width: 100%;
+  font-family: "jersey 25";
+  height: 300px;
+  
+
+ 
+  
+
+}
+.dataanalysis{
+  width: 65%;
+  margin: 20px auto;
+  font-family: "jersey 25";
+  color: white;
+ 
+}
+
+/* @media screen and (max-width:800px)
+{
+  .analysis{
+    flex-direction:column;
+  }
+} */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

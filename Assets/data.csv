@@ -1,0 +1,11 @@
+filmID,title,yearReleased,rating,duration,genre
+1,The Shawshank Redemption,1994,R,142,Drama
+2,The Godfather,1972,R,175,Crime
+3,The Dark Knight,2008,PG-13,152,Action
+4,Schindler's List,1993,R,195,Biography
+5,Pulp Fiction,1994,R,154,Crime
+6,The Lord of the Rings: The Return of the King,2003,PG-13,201,Adventure
+7,Forrest Gump,1994,PG-13,142,Drama
+8,Inception,2010,PG-13,148,Action
+9,The Matrix,1999,R,136,Action
+10,Goodfellas,1990,R,146,Biography
