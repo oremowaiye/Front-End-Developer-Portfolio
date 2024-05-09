@@ -9,7 +9,6 @@
 header {
   height: 60px;
   padding: 0 40px;
-  /* max-width: 960px; */
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
@@ -17,16 +16,14 @@ header {
   background-color: black;
   font-family: "Jersey 25";
  
-  /* cursor: pointer; */
+ 
 }
 header a span{
   background-color: blueviolet;
 }
 header a:hover {
  background-color: blueviolet;
-
- 
-   
+  
 }
 
 .logo{
@@ -161,6 +158,67 @@ nav ul li a:hover {
 .cta a button:hover{
   cursor: pointer;
 }
+
+/* mobile phone */
+@media (max-width: 400px) {
+header {
+  height: 60px;
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: black;
+  font-family: "Jersey 25";
+}
+
+
+header a {
+  text-decoration: none;
+  color: white; 
+}
+
+
+header a span {
+  background-color: blueviolet;
+}
+nav {
+  width: 100%;
+}
+
+nav ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+}
+
+nav ul li {
+  list-style: none;
+  padding: 10px 0;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.5rem;
+}
+
+nav ul li a:hover {
+  text-decoration: dotted;
+}
+}
+
+
+ /* @media (max-width: 768px) {
+  header {
+    padding: 0 10px; 
+  }
+
+  nav ul li {
+    padding: 5px 0; 
+}
+}  */
+
+
 
 /* contact*/
 .bg1{
