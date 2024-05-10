@@ -156,14 +156,16 @@ nav ul li a {
 
 /* mobile phone */
 @media screen and (min-width: 300px) and (max-width: 768px) {
+  
 header {
   height: 60px;
-  padding: 0 20px;
+  padding: 0px;
   display: flex;
-  justify-content: space-between;
+  /* justify-content: space-between; */
   align-items: center;
   background-color: black;
   font-family: "Jersey 25";
+  border: solid 2px #3c3c3b;
 }
 
 header a {
@@ -183,7 +185,7 @@ nav {
 
 nav ul {
   display: flex;
-  flex-direction: column;
+  /* flex-direction: column; */
   align-items: center; 
 }
 
@@ -203,8 +205,9 @@ nav ul li a:hover {
 }
 .links{
   position: fixed;
-  top: -0px;
+  top: 70px;
   right: 0px;
+ 
   
 }
 
@@ -282,18 +285,6 @@ nav ul li a:hover {
   object-fit: cover;
   object-position: 50% 50%;
 }
-/* .bg{
-  position: absolute;
-  z-index: -1;
-  height: 100vh;
-  object-fit: cover;
-  object-position: 50% 50%;
-}
-
-.bg img{
-  width: 100vw;
-  height: 150vh;
-} */
 
 /* about me */
 .aboutpage{
