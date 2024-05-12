@@ -457,14 +457,28 @@ nav ul li a:hover {
     font-size: 0.7 rem;
   
   }
-
+/* 
   .p1, .p2, .p3 ,.p6, .p5,.p4{
    flex-direction: column;
-   align-content: space-arounds;
    width: 100%;
-   max-width: 300px;
-   margin: 20px 0;
+   margin: 10px auto;
+
+
+  } */
+
+  .p1, .p2, .p3, .p4, .p5, .p6 {
+    padding: 20px;
+    margin: 10px auto; 
+    width: 100%;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: end;
+    box-sizing: border-box;
   }
+
+
 
   .allprojects h1{
     font-size: 20px;
@@ -567,7 +581,7 @@ nav ul li a:hover {
 }
 .p1, .p2,.p3{
   padding: 20px;
-  margin: 10px;
+  margin: 10px ;
   float: left;
   width: 28.48%;
   height: 250px;
@@ -600,7 +614,7 @@ nav ul li a:hover {
 
  .p4, .p5 , .p6{
   padding:  20px;
-  margin: 10px ;
+  margin: 10px;
   float: left;
   width: 28.48%;
   height: 250px;
