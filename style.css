@@ -466,6 +466,21 @@ nav ul li a:hover {
     font-size: 0.7 rem;
   
   }
+
+  .p1, .p2, .p3 ,.p6, .p5,.p4{
+   flex-direction: column;
+   align-items: center;
+   width: 100%;
+   max-width: 300px;
+   margin: 20px 0;
+  }
+
+  .allprojects h1{
+    font-size: 20px;
+
+  }
+
+
 }
 
 /* about */
