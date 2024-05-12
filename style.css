@@ -397,6 +397,7 @@ nav ul li a:hover {
   font-weight: 300;
   letter-spacing: 2px;
   max-height: 0;
+  max-height: 0;
   opacity: 0;
   transform: 0.3s linear;
 }
@@ -417,6 +418,12 @@ nav ul li a:hover {
    max-width: 300px;
    margin: 10px 0;
   }
+  
+  .card1 p,.card2 p, .card3 p{
+    opacity: 1;
+ 
+  }
+
 
   .sumtext p{
     font-family: "jersey 25";
@@ -463,9 +470,10 @@ nav ul li a:hover {
   .allprojects h1{
     font-size: 20px;
   }
+  }
 
 
-}
+
 @media screen and (max-width:450px){
   .p1, .p2, .p3, .p4, .p5 ,.p6{
     padding: 0 20px;
