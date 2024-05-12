@@ -406,10 +406,11 @@ nav ul li a:hover {
   opacity: 1;
 }
 
-@media screen and (max-width:800px){
+@media screen and (min-width: 300px) and (max-width:800px){
   .contact-info{
     flex-direction:column;
   }
+ 
 
   .card1,.card2,.card3{
    width: 100%;
@@ -457,32 +458,19 @@ nav ul li a:hover {
     font-size: 0.7 rem;
   
   }
-/* 
-  .p1, .p2, .p3 ,.p6, .p5,.p4{
-   flex-direction: column;
-   width: 100%;
-   margin: 10px auto;
 
-
-  } */
-
-  .p1, .p2, .p3, .p4, .p5, .p6 {
-    padding: 20px;
-    margin: 10px auto; 
+  .allprojects{
+    padding: 0 20px;
+    margin: 20px 20px;
     width: 100%;
-    height: 250px;
-    display: flex;
-    flex-direction: column;
+    justify-items: center ;
     align-items: center;
-    justify-content: end;
-    box-sizing: border-box;
+
   }
 
-
-
+ 
   .allprojects h1{
-    font-size: 20px;
-
+    font-size: 16px;
   }
 
 
