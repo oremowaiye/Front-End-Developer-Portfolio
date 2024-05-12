@@ -334,16 +334,7 @@ nav ul li a:hover {
  
  
 }
-
-
-
-
-
 }
-
-
-
-
 
 
 /* contact*/
@@ -469,7 +460,7 @@ nav ul li a:hover {
 
   .p1, .p2, .p3 ,.p6, .p5,.p4{
    flex-direction: column;
-   align-items: center;
+   align-content: space-arounds;
    width: 100%;
    max-width: 300px;
    margin: 20px 0;
@@ -568,7 +559,6 @@ nav ul li a:hover {
   background: blueviolet;
   color: white;
   font-size: 1 rem;
-
 }
 
 /* projects  */
@@ -591,7 +581,6 @@ nav ul li a:hover {
 
 .p1{
   background-color:teal;
- 
 }
 .p2{
   background-color: rgb(130, 93, 145);
@@ -621,9 +610,8 @@ nav ul li a:hover {
   align-items: center;
   box-sizing: border-box; 
   font-family: "jersey 25";
-  
-
 } 
+
 .css, .html,.python,.java{
   padding: 20px;
   margin: 10px ;
@@ -636,20 +624,17 @@ nav ul li a:hover {
   box-sizing: border-box; 
   font-family: "jersey 25";
   background-color: aqua;
-
 }
-
 
 /* project 1 */
 .ps{
   background-color: #060606;
 }
+
 .projectsection{
   padding: 40px 0;
   max-width: 1200px;
   margin-inline: auto;
-
-
 }
 
 .projectitem {
@@ -691,16 +676,11 @@ nav ul li a:hover {
 .analysis{
   margin: 100px;
   padding: 0;
- 
   display: flex;
   width: 100%;
   font-family: "jersey 25";
   height: 300px;
   
-
- 
-  
-
 }
 .dataanalysis{
   width: 65%;
