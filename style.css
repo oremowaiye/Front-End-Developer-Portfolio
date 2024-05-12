@@ -477,6 +477,11 @@ nav ul li a:hover {
     align-items: center;
 
   }
+  .allprojects{
+    margin-inline: auto;
+    max-width: 260px;
+
+  }
 }
 
 /* about */
@@ -591,7 +596,7 @@ nav ul li a:hover {
   background-color: rgb(130, 93, 145);
 }
 .p3{
-  background-color: aqua;
+  background-color: yellowgreen;
 }
 .p4{
   background-color: darksalmon;
@@ -600,7 +605,7 @@ nav ul li a:hover {
   background-color: deeppink;
 }
 .p6{
-  background-color: yellowgreen;
+  background-color: aqua;
 }
 
  .p4, .p5 , .p6{
