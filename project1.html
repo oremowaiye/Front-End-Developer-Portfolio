@@ -21,20 +21,33 @@
   <main>
     <a class="back" href="projects.html">&larr; All projects</a>
     <h1>SauceDemo Test Automation</h1>
-    <ul class="tags"><li>Java</li><li>Selenium WebDriver</li><li>Page Object Model</li></ul>
+    <ul class="tags"><li>Java 17</li><li>Selenium 4</li><li>TestNG</li><li>Cucumber</li><li>RestAssured</li><li>Allure</li><li>GitHub Actions</li></ul>
 
     <h2 class="reveal">What it is</h2>
-    <p>An automated regression suite written against <a href="https://www.saucedemo.com/">SauceDemo</a>, a demo e-commerce site built for practising UI automation. It covers the flows a real store depends on: logging in, filtering the catalogue, adding items to a basket and completing checkout.</p>
+    <p>A Selenium 4 and Java test automation framework built against <a href="https://www.saucedemo.com/">saucedemo.com</a>. It covers the flows a real store depends on: signing in, browsing and sorting the catalogue, building a cart, and completing checkout. 45 test cases, running green in CI.</p>
+
+    <div class="actions reveal">
+      <a class="btn btn--primary" href="https://oremowaiye.github.io/sauce-demo-automation/">View the live test report</a>
+      <a class="btn" href="https://github.com/oremowaiye/sauce-demo-automation">View on GitHub</a>
+    </div>
 
     <h2 class="reveal">Why I built it</h2>
     <p>My day job runs on a client codebase I cannot show anyone. This is the equivalent work in public, somewhere I can demonstrate how I structure a suite rather than just claim I can.</p>
 
     <h2 class="reveal">How it is put together</h2>
-    <p>Each page of the application has its own class holding its locators and the actions available on it, so a change to the markup is fixed in one file rather than across every test. Tests describe behaviour and read as behaviour; the selectors stay out of them.</p>
-    <p>The negative cases are the interesting ones: locked-out users, wrong credentials, empty baskets at checkout. Those catch more real regressions than the happy path does.</p>
+    <p>Every page of the application has its own class holding its locators and the actions available on it, so a change to the markup is fixed in one file rather than across every test. Tests describe behaviour and read as behaviour. There are no waits in the test bodies, only explicit waits inside the page objects, and a thread-local driver factory so classes can run in parallel.</p>
+    <p>The negative cases are the interesting ones: locked-out users, rejected credentials, incomplete checkout forms, and reaching the inventory without signing in. Those catch more real regressions than the happy path does. The invalid credential cases are data driven, so one test method covers several combinations.</p>
 
-    <h2 class="reveal">Status</h2>
-    <p>In progress. The repository is private while I build it out, and will be public once the suite is complete.</p>
+    <h2 class="reveal">What it covers</h2>
+    <ul class="stack reveal">
+      <li><strong>Suites</strong> Smoke and regression, plus separate API and BDD suites</li>
+      <li><strong>BDD</strong> Cucumber features sharing the same page objects</li>
+      <li><strong>API</strong> RestAssured checks with a shared spec and a response time budget</li>
+      <li><strong>Flake handling</strong> A retry analyser, so a genuine failure is distinguishable from a blip</li>
+      <li><strong>Reporting</strong> Allure with severities and screenshots on failure</li>
+      <li><strong>CI</strong> GitHub Actions on push, pull request and nightly, Chrome and Firefox in parallel</li>
+    </ul>
+
   </main>
   <footer>Ore Mowaiye · London, UK</footer>
   <script src="script.js"></script>

@@ -39,18 +39,18 @@
     <p>I came to testing from development, which shapes how I work: I read the application code, not just the UI, and I care about test suites being maintainable rather than merely passing.</p>
 
 
-    <h2 class="reveal">A recent run</h2>
+    <h2 class="reveal">Latest run</h2>
     <div class="run reveal">
-      <div class="cmd">$ mvn test -Dsuite=checkout <span class="caret"></span></div>
-      <div class="line"><span class="tick">&#10003;</span><span>loginWithValidCredentials</span><span class="dur">1.2s</span></div>
-      <div class="line"><span class="tick">&#10003;</span><span>lockedOutUserSeesError</span><span class="dur">0.9s</span></div>
-      <div class="line"><span class="tick">&#10003;</span><span>filterCatalogueByPriceLowToHigh</span><span class="dur">1.4s</span></div>
-      <div class="line"><span class="tick">&#10003;</span><span>addTwoItemsToBasket</span><span class="dur">1.1s</span></div>
-      <div class="line"><span class="tick">&#10003;</span><span>checkoutRequiresPostcode</span><span class="dur">0.8s</span></div>
-      <div class="line"><span class="tick">&#10003;</span><span>completeOrderShowsConfirmation</span><span class="dur">2.0s</span></div>
-      <div class="total">6 passed &middot; 0 failed &middot; 7.4s</div>
+      <div class="cmd">$ mvn test -DsuiteXmlFile=suites/smoke.xml <span class="caret"></span></div>
+      <div class="line"><span class="tick">&#10003;</span><span>standardUserCanSignIn</span><span class="dur">BLOCKER</span></div>
+      <div class="line"><span class="tick">&#10003;</span><span>lockedOutUserCannotSignIn</span><span class="dur">CRITICAL</span></div>
+      <div class="line"><span class="tick">&#10003;</span><span>allProductsAreListed</span><span class="dur">CRITICAL</span></div>
+      <div class="line"><span class="tick">&#10003;</span><span>addingAProductUpdatesButtonAndBadge</span><span class="dur">CRITICAL</span></div>
+      <div class="line"><span class="tick">&#10003;</span><span>addedProductAppearsInTheCart</span><span class="dur">CRITICAL</span></div>
+      <div class="line"><span class="tick">&#10003;</span><span>customerCanCompleteAnOrder</span><span class="dur">BLOCKER</span></div>
+      <div class="total">Full run: 45 passed &middot; 0 failed &middot; 2m 13s</div>
     </div>
-    <p class="reveal" style="font-size:0.86rem;color:var(--muted)">From the SauceDemo suite. <a href="project1.html">How it is built &rarr;</a></p>
+    <p class="reveal" style="font-size:0.86rem;color:var(--muted)">Smoke tests from my SauceDemo suite, run by GitHub Actions on 17 Sep 2026. <a href="https://oremowaiye.github.io/sauce-demo-automation/">Live report &rarr;</a> &middot; <a href="project1.html">How it is built &rarr;</a></p>
 
     <h2 class="reveal">Working with</h2>
     <ul class="stack reveal">
@@ -59,6 +59,7 @@
       <li><strong>CI / tooling</strong> Jenkins, Git, JIRA, Azure DevOps</li>
       <li><strong>Data</strong> MySQL, PostgreSQL</li>
       <li><strong>Web</strong> HTML, CSS, React, Flask</li>
+      <li><strong>Certified</strong> ISTQB</li>
       <li><strong>Studying</strong> MSc Computer Science with Cyber Security, 2025–2027</li>
     </ul>
   </main>
