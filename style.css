@@ -435,3 +435,116 @@ nav ul li a span::after { display: none; }
   .reveal { opacity: 1; transform: none; }
   .run .line, .run .total { opacity: 1; }
 }
+
+/* --- filmflix demo --- */
+
+.ff {
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: var(--surface);
+  padding: 20px;
+  margin: 18px 0 8px;
+}
+
+.ff-controls {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(132px, 1fr));
+  gap: 10px;
+  margin-bottom: 16px;
+}
+
+.ff-field { display: flex; flex-direction: column; gap: 4px; }
+
+.ff-field label {
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+.ff-field input, .ff-field select {
+  font: inherit;
+  font-size: 0.9rem;
+  padding: 7px 9px;
+  border: 1px solid var(--line);
+  border-radius: 7px;
+  background: var(--bg);
+  color: var(--text);
+}
+
+.ff-field input:focus, .ff-field select:focus {
+  outline: none;
+  border-color: var(--accent);
+}
+
+.ff-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 10px;
+  font-size: 0.85rem;
+  color: var(--muted);
+}
+
+#ff-reset {
+  font: inherit;
+  font-size: 0.82rem;
+  padding: 5px 12px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: var(--bg);
+  color: var(--muted);
+  cursor: pointer;
+}
+
+#ff-reset:hover { border-color: var(--accent); color: var(--accent); }
+
+.ff-sql {
+  font-family: ui-monospace, 'SF Mono', Menlo, Consolas, monospace;
+  font-size: 0.78rem;
+  line-height: 1.6;
+  white-space: pre-wrap;
+  background: var(--accent-soft);
+  color: var(--accent);
+  border-radius: 8px;
+  padding: 12px 14px;
+  margin-bottom: 14px;
+  overflow-x: auto;
+}
+
+.ff-sql-error { background: var(--bg); color: var(--muted); border: 1px dashed var(--line); }
+
+.ff-table-wrap { overflow-x: auto; max-height: 340px; overflow-y: auto; }
+
+.ff table { border-collapse: collapse; width: 100%; font-size: 0.88rem; }
+
+.ff th {
+  position: sticky;
+  top: 0;
+  background: var(--surface);
+  text-align: left;
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  color: var(--muted);
+  padding: 6px 10px 6px 0;
+  border-bottom: 1px solid var(--line);
+}
+
+.ff td {
+  padding: 7px 10px 7px 0;
+  border-bottom: 1px solid var(--line);
+  vertical-align: top;
+}
+
+.ff tr:last-child td { border-bottom: 0; }
+
+.ff-note { font-size: 0.84rem; color: var(--muted); margin-top: 10px; }
+
+@media (max-width: 600px) {
+  .ff { padding: 14px; }
+  .ff-controls { grid-template-columns: 1fr 1fr; }
+}

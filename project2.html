@@ -27,6 +27,31 @@
     <h2 class="reveal">What it is</h2>
     <p>A command-line application for managing a film catalogue. It handles adding, searching, updating and removing records, with the data held in a relational database rather than in memory.</p>
 
+    <h2 class="reveal">Try it</h2>
+    <p>The Python app runs this from a menu in the terminal. Here are the same 36 records with the same filters, and the statement it builds for each query.</p>
+
+    <div class="ff reveal">
+      <div class="ff-controls">
+        <div class="ff-field"><label for="f-title">Title contains</label><input id="f-title" type="text" placeholder="bourne"></div>
+        <div class="ff-field"><label for="f-genre">Genre</label><select id="f-genre"><option value="">Any</option></select></div>
+        <div class="ff-field"><label for="f-rating">Rating</label><select id="f-rating"><option value="">Any</option></select></div>
+        <div class="ff-field"><label for="f-year">Year from</label><input id="f-year" type="number" min="1900" max="2030" placeholder="2010"></div>
+        <div class="ff-field"><label for="f-duration">Max minutes</label><input id="f-duration" type="number" min="1" placeholder="120"></div>
+      </div>
+
+      <pre class="ff-sql" id="ff-sql"></pre>
+
+      <div class="ff-bar"><span id="ff-count"></span><button id="ff-reset" type="button">Reset</button></div>
+
+      <div class="ff-table-wrap">
+        <table>
+          <thead><tr><th>Title</th><th>Year</th><th>Rating</th><th>Duration</th><th>Genre</th></tr></thead>
+          <tbody id="ff-rows"></tbody>
+        </table>
+      </div>
+    </div>
+    <p class="ff-note">The SQL shown is the statement the Python app runs for that query. Filtering here happens in the browser, so the page stays static with no server behind it.</p>
+
     <h2 class="reveal">What it involved</h2>
     <p>Designing the table structure, writing the queries behind each menu option, and validating input before it reaches the database. It was where SQL stopped being exercises for me and became something I used to build a working thing.</p>
 
@@ -35,6 +60,8 @@
     </div>
   </main>
   <footer>Ore Mowaiye · London, UK</footer>
+  <script src="films.js"></script>
+  <script src="filmflix-demo.js"></script>
   <script src="script.js"></script>
 </body>
 </html>
