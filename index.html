@@ -3,54 +3,66 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Ore Mowaiye</title>
+  <meta name="description" content="Ore Mowaiye, automation tester working in Java and Selenium. London, UK.">
+  <title>Ore Mowaiye | Automation Tester</title>
   <link rel="stylesheet" href="style.css">
-  <script src="script.js"></script>
-  <script src="https://kit.fontawesome.com/07721190df.js" crossorigin="anonymous"></script>
-  <link rel="icon" type="image/png" sizes="16x16"  href="Assets/favicon-16x16.png">
-
+  <link rel="icon" type="image/png" sizes="16x16" href="Assets/favicon-16x16.png">
 </head>
 <body>
   <header>
     <nav>
       <ul>
-        <li><a href="index.html"><span>Home</span></a></li>
-        <li><a href="about.html">About Me</a></li>
-        <li><a href="projects.html">Projects</a></li>
-        <li><a href="contact.html">Contact</a></li>
+        <li><a href="index.html"><span>HOME</span></a></li>
+        <li><a href="about.html">ABOUT</a></li>
+        <li><a href="projects.html">PROJECTS</a></li>
+        <li><a href="contact.html">CONTACT</a></li>
       </ul>
     </nav>
   </header>
   <main>
-    <section class="center">
-      <div class="bg">
-        <img src="Assets/bg.jpg" alt="" srcset="">
-      </div>
-      <div class="links">
-        <ul>
-          <li><a href="https://www.linkedin.com/in/ore-mowaiye-048978165/"><i class="fa-brands fa-linkedin"></i></a></li>
-          <li><a href="https://github.com/oremowaiye"><i class="fa-brands fa-github"></i></a></li>
-          <li><a href="cv.pdf" download>My CV</a></li>
-        </ul>
-      </div>
-      <div class="landing">
-        <div class="summary">
-          <div class="orepic">
-            <img src="Assets/IMG_1218.jpg" alt="Ore">
-          </div>
-          <div class="sumtext">
-            <h1>Hello, My name is <a href="about.html">ORE</a></h1>
-            <p>A passionate <u>web developer</u> dedicated to crafting engaging and user-friendly web experiences.
-            </p>
-          </div>
-        </div>
-        <div class="cta">
-          <a href="about.html" ><button style="background-color: blue;">About Me</button></a>
-          <a href="projects.html"><button style="background-color: rgb(0, 195, 255);">My projects</button></a>
+    <div class="intro">
+      <img src="Assets/ore.jpg" alt="Ore Mowaiye">
+      <div>
+        <h1>Ore Mowaiye</h1>
+        <p class="lede">Automation tester working in Java and Selenium, currently in the financial services sector. Studying an MSc in Computer Science with Cyber Security. Based in London.</p>
+        <div class="actions">
+          <a class="btn btn--primary" href="projects.html">View projects</a>
+          <a class="btn" href="cv.pdf" download>Download CV</a>
+          <a class="btn" href="https://www.linkedin.com/in/oremowaiye/">LinkedIn</a>
+          <a class="btn" href="https://github.com/oremowaiye">GitHub</a>
         </div>
       </div>
-    </section>
+    </div>
+
+    <h2>What I do</h2>
+    <p>I write and maintain automated tests for web applications. That means building page objects, keeping suites stable as the product changes, and investigating failures so they point at real defects rather than flaky selectors.</p>
+    <p>I came to testing from development, which shapes how I work: I read the application code, not just the UI, and I care about test suites being maintainable rather than merely passing.</p>
+
+
+    <h2 class="reveal">A recent run</h2>
+    <div class="run reveal">
+      <div class="cmd">$ mvn test -Dsuite=checkout <span class="caret"></span></div>
+      <div class="line"><span class="tick">&#10003;</span><span>loginWithValidCredentials</span><span class="dur">1.2s</span></div>
+      <div class="line"><span class="tick">&#10003;</span><span>lockedOutUserSeesError</span><span class="dur">0.9s</span></div>
+      <div class="line"><span class="tick">&#10003;</span><span>filterCatalogueByPriceLowToHigh</span><span class="dur">1.4s</span></div>
+      <div class="line"><span class="tick">&#10003;</span><span>addTwoItemsToBasket</span><span class="dur">1.1s</span></div>
+      <div class="line"><span class="tick">&#10003;</span><span>checkoutRequiresPostcode</span><span class="dur">0.8s</span></div>
+      <div class="line"><span class="tick">&#10003;</span><span>completeOrderShowsConfirmation</span><span class="dur">2.0s</span></div>
+      <div class="total">6 passed &middot; 0 failed &middot; 7.4s</div>
+    </div>
+    <p class="reveal" style="font-size:0.86rem;color:var(--muted)">From the SauceDemo suite. <a href="project1.html">How it is built &rarr;</a></p>
+
+    <h2 class="reveal">Working with</h2>
+    <ul class="stack reveal">
+      <li><strong>Testing</strong> Selenium WebDriver, Page Object Model, regression suites, manual and exploratory testing</li>
+      <li><strong>Languages</strong> Java, Python, JavaScript, SQL</li>
+      <li><strong>CI / tooling</strong> Jenkins, Git, JIRA, Azure DevOps</li>
+      <li><strong>Data</strong> MySQL, PostgreSQL</li>
+      <li><strong>Web</strong> HTML, CSS, React, Flask</li>
+      <li><strong>Studying</strong> MSc Computer Science with Cyber Security, 2025–2027</li>
+    </ul>
   </main>
-  <footer></footer>
+  <footer>Ore Mowaiye · London, UK</footer>
+  <script src="script.js"></script>
 </body>
 </html>

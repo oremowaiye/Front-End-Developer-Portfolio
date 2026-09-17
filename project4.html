@@ -3,44 +3,37 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Ore Mowaiye</title>
+  <title>This Site | Ore Mowaiye</title>
   <link rel="stylesheet" href="style.css">
-  <script src="script.js"></script>
+  <link rel="icon" type="image/png" sizes="16x16" href="Assets/favicon-16x16.png">
 </head>
-<body class="ps">
+<body>
   <header>
-
     <nav>
       <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About Me</a></li>
-        <li><a href="projects.html"><span>Projects</span></a></li>
-               <li><a href="contact.html">Contact</a></li>
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="about.html">ABOUT</a></li>
+        <li><a href="projects.html"><span>PROJECTS</span></a></li>
+        <li><a href="contact.html">CONTACT</a></li>
       </ul>
     </nav>
   </header>
   <main>
-    <section>
-        <div class="analysis">
-            <img src="Assets/Figure_1.png" alt="">
-            <img src="Assets/Figure_2.png" alt="">
-            </div>
-        <div class="dataanalysis">
-        <h1> Data Analysis </h1>
-        <p> This is a powerful data analysis and visualisation program designed to help users explore, analyse, and visualise their data with ease. Whether you're a data scientist, analyst, or business professional, it empowers you to uncover insights, identify trends, and communicate findings effectively through interactive graphs and charts. </p>
-        <p>
-          Simplify complex data analysis tasks and streamline decision-making processes with intuitive tools and visualisations and uncover valuable insights and trends hidden within your data, enabling you to make informed decisions and drive business growth.
+    <a class="back" href="projects.html">&larr; All projects</a>
+    <h1>This Site</h1>
+    <ul class="tags"><li>HTML</li><li>CSS</li><li>Netlify</li></ul>
 
-        </p>
-        <p>
-          With its comprehensive features and intuitive interface, this is your go-to solution for data analysis and visualisation. Whether you're conducting exploratory data analysis, preparing reports, or delivering presentations,it empowers you to transform raw data into actionable insights with ease. Unlock the full potential of your data and elevate your decision-making processes .
+    <h2 class="reveal">What it is</h2>
+    <p>The site you are reading. Hand-written HTML and CSS with no framework and no build step, deployed on Netlify from GitHub.</p>
 
-        </p>
-        </div>
+    <h2 class="reveal">Why it is plain</h2>
+    <p>A portfolio that needs a toolchain to render four pages of text is solving a problem it does not have. Static files load instantly, cost nothing to host and will still work in five years. The CSS is a single stylesheet using custom properties, which is also what makes the dark mode a few lines rather than a second theme.</p>
 
-
-
-        <a class="projectlink" href="Assets/data.csv" download> Download csv file</a>
-    </section>
-
+    <div class="actions reveal">
+      <a class="btn btn--primary" href="https://github.com/oremowaiye/Front-End-Developer-Portfolio">View on GitHub</a>
+    </div>
   </main>
+  <footer>Ore Mowaiye · London, UK</footer>
+  <script src="script.js"></script>
+</body>
+</html>

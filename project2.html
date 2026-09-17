@@ -3,38 +3,38 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Ore Mowaiye</title>
+  <title>FilmFlix Database | Ore Mowaiye</title>
   <link rel="stylesheet" href="style.css">
-  <script src="script.js"></script>
+  <link rel="icon" type="image/png" sizes="16x16" href="Assets/favicon-16x16.png">
 </head>
 <body>
   <header>
-
     <nav>
       <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About Me</a></li>
-        <li><a href="projects.html"><span>Projects</span></a></li>
-               <li><a href="contact.html">Contact</a></li>
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="about.html">ABOUT</a></li>
+        <li><a href="projects.html"><span>PROJECTS</span></a></li>
+        <li><a href="contact.html">CONTACT</a></li>
       </ul>
     </nav>
   </header>
-  <main class="ps">
-    <section class="projectsection">
-        <div class="projectitem">
-            <img src="Assets/hatstore.png" alt="">
-        <h1> Hat Store Webpage </h1>
-        </div>
-        <div class="projectdesc">
-        <p>Hat Store Webpage is a comprehensive e-commerce platform tailored specifically for hats. It offers a seamless and intuitive interface that allows users to browse, select, and purchase their favourite hats with ease. From classic fedoras to trendy snapbacks, our platform caters to a diverse range of tastes and styles. </p>
-          <p>This platform boasts a sleek and user-friendly interface that ensures a smooth and enjoyable shopping experience for customers of all ages.By providing a seamless and engaging online shopping experience, our platform helps hat stores attract and retain customers, leading to increased sales and revenue.  </p>
-        <br>
-         <p> Ready to take your hat store to the next level? Contact us today to learn more about how our Hat Store Webpage Software can help you enhance your online presence, drive sales, and delight customers with a seamless shopping experience like never before.</p>
-        </div>
+  <main>
+    <a class="back" href="projects.html">&larr; All projects</a>
+    <h1>FilmFlix Database</h1>
+    <ul class="tags"><li>Python</li><li>SQL</li><li>SQLite</li></ul>
 
+    <img class="shot reveal" src="Assets/film database.png" alt="FilmFlix command line output">
+    <h2 class="reveal">What it is</h2>
+    <p>A command-line application for managing a film catalogue. It handles adding, searching, updating and removing records, with the data held in a relational database rather than in memory.</p>
 
-    
-    <a class="projectlink" href="https://oremowaiye.github.io/Hats-Store-Webpage/">View Website</a>
-    </section>
+    <h2 class="reveal">What it involved</h2>
+    <p>Designing the table structure, writing the queries behind each menu option, and validating input before it reaches the database. It was where SQL stopped being exercises for me and became something I used to build a working thing.</p>
 
+    <div class="actions reveal">
+      <a class="btn btn--primary" href="https://github.com/oremowaiye/FilmFlix-Database">View on GitHub</a>
+    </div>
   </main>
+  <footer>Ore Mowaiye · London, UK</footer>
+  <script src="script.js"></script>
+</body>
+</html>

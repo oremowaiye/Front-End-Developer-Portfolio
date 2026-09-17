@@ -3,38 +3,40 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Ore Mowaiye</title>
+  <title>SauceDemo Test Automation | Ore Mowaiye</title>
   <link rel="stylesheet" href="style.css">
-  <script src="script.js"></script>
- 
+  <link rel="icon" type="image/png" sizes="16x16" href="Assets/favicon-16x16.png">
 </head>
 <body>
   <header>
-
     <nav>
       <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About Me</a></li>
-        <li><a href="projects.html"><span>Projects</span></a></li>
-        <li><a href="contact.html">Contact</a></li>
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="about.html">ABOUT</a></li>
+        <li><a href="projects.html"><span>PROJECTS</span></a></li>
+        <li><a href="contact.html">CONTACT</a></li>
       </ul>
     </nav>
   </header>
-  <main class="ps">
-    <section class="projectsection">
-        <div class="projectitem">
-            <img src="Assets/countdown.png" alt="">
-            <h1> New Year Countdown </h1>
-        </div>
-        <div class="projectdesc">
-        <p >
-          Welcome to the New Year Countdown , your ultimate companion for ringing in the new year with style and excitement! This software is designed to bring the thrill of anticipation to users around the globe as they eagerly await the arrival of the new year. Whether it's for personal use, events, or business promotions, this site offers a seamless countdown experience that adds a touch of magic to any celebration. </p>
-<br>
-          <p>With its user-friendly interface the New Year Countdown App is the perfect way to usher in the new year with joy, anticipation, and celebration.Join the countdown to a memorable new year!
-        </p>
-        </div>
-    
-        <a class="projectlink" href="https://oremowaiye.github.io/Countdown/">View Website</a>
-    </section>
+  <main>
+    <a class="back" href="projects.html">&larr; All projects</a>
+    <h1>SauceDemo Test Automation</h1>
+    <ul class="tags"><li>Java</li><li>Selenium WebDriver</li><li>Page Object Model</li></ul>
 
+    <h2 class="reveal">What it is</h2>
+    <p>An automated regression suite written against <a href="https://www.saucedemo.com/">SauceDemo</a>, a demo e-commerce site built for practising UI automation. It covers the flows a real store depends on: logging in, filtering the catalogue, adding items to a basket and completing checkout.</p>
+
+    <h2 class="reveal">Why I built it</h2>
+    <p>My day job runs on a client codebase I cannot show anyone. This is the equivalent work in public, somewhere I can demonstrate how I structure a suite rather than just claim I can.</p>
+
+    <h2 class="reveal">How it is put together</h2>
+    <p>Each page of the application has its own class holding its locators and the actions available on it, so a change to the markup is fixed in one file rather than across every test. Tests describe behaviour and read as behaviour; the selectors stay out of them.</p>
+    <p>The negative cases are the interesting ones: locked-out users, wrong credentials, empty baskets at checkout. Those catch more real regressions than the happy path does.</p>
+
+    <h2 class="reveal">Status</h2>
+    <p>In progress. The repository is private while I build it out, and will be public once the suite is complete.</p>
   </main>
+  <footer>Ore Mowaiye · London, UK</footer>
+  <script src="script.js"></script>
+</body>
+</html>
